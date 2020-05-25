@@ -4,7 +4,7 @@ class DB_con
 {
 	function __construct()
 	{
-		$conn = mysqli_connect( "ls-257a4f03e635bdc77ba39e3e076bb62d3f7637a9.ctungptxcpdz.us-east-1.rds.amazonaws.com", "dbmasteruser", "MIcel60166572","db_geotaxi") or die ("No se ha podido conectar al servidor de Base de datos");
+		$conn = mysqli_connect( "ls-257a4f03e635bdc77ba39e3e076bb62d3f7637a9.ctungptxcpdz.us-east-1.rds.amazonaws.com:3306", "dbmasteruser", "MIcel60166572","db_geotaxi") or die ("No se ha podido conectar al servidor de Base de datos");
 		//mysqli_select_db( $conn, "dbtuts" ) or die ( "Upps! Pues va a ser que no se ha podido conectar a la base de datos" );
 	}
 	public function login($usuario,$password)
